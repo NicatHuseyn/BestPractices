@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F12515F-8267-4939-8BCA-233470714710}|BestPractices.API\\BestPractices.API.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\bestpractices.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F12515F-8267-4939-8BCA-233470714710}|BestPractices.API\\BestPractices.API.csproj|solutionrelative:bestpractices.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\extensions\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\extensions\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 283,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\BestPractices.API\\Program.cs",
+              "RelativeDocumentMoniker": "BestPractices.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\BestPractices.API\\Program.cs",
+              "RelativeToolTip": "BestPractices.API\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T21:48:31.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Extensions\\ServiceExtension.cs",
+              "RelativeDocumentMoniker": "Services\\Extensions\\ServiceExtension.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Extensions\\ServiceExtension.cs",
+              "RelativeToolTip": "Services\\Extensions\\ServiceExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T21:48:07.034Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
