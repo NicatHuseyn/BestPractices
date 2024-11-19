@@ -19,7 +19,7 @@ namespace Repositories.GenericRepositories
         #region Get Methods
         public IQueryable<T> GetAll()=> _dbSet.AsQueryable().AsNoTracking();
 
-        public async ValueTask<T?> GetByIdAsync(string id)=> await _dbSet.FindAsync(id);
+        public async Task<T?> GetByIdAsync(string id)=> await _dbSet.FindAsync(id);
 
         public IQueryable<T> GetWhere(Expression<Func<T, bool>> expression)=> _dbSet.Where(expression).AsQueryable().AsNoTracking();
         #endregion

@@ -11,7 +11,7 @@ namespace Repositories.GenericRepositories
     {
         #region Get Methods
         IQueryable<T> GetAll();
-        ValueTask<T?> GetByIdAsync(string id);
+        Task<T> GetByIdAsync(string id);
         IQueryable<T> GetWhere(Expression<Func<T,bool>> expression);
         #endregion
 
