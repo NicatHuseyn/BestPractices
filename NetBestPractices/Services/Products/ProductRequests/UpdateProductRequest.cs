@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace Services.Products.ProductRequests
 {
-    public record UpdateProductRequest(string Id, string Name, int Stock, decimal Price);
+    public record UpdateProductRequest(string Name, int Stock, decimal Price);
 }

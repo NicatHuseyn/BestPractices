@@ -1,25 +1,30 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Services.Products.ProductRequests;
 using Services.Products.ProductServices;
+using System.Net;
+using System.Runtime.InteropServices.Marshalling;
 
 namespace BestPractices.API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ProductsController : ControllerBase
+    public class ProductsController(IProductService productService) : CustomBaseController
     {
-        private readonly IProductService _productService;
-
-        public ProductsController(IProductService productService)
-        {
-            _productService = productService;
-        }
-
         [HttpGet]
-        public async Task<IActionResult> GetAll()
-        {
-            var products = await _productService.GetTopPriceAsync(3);
-            return Ok(products);
-        }
+        public async Task<IActionResult> GetAll() => CreateActionResult(await productService.GetAllListAsync());
+
+        [HttpGet("{pageNumber}/{pageSize}")]
+        public async Task<IActionResult> GetPagedAll(int pageNumber, int pageSize) => CreateActionResult(await productService.GetPaginationListAsync(pageNumber,pageSize));
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(string id) => CreateActionResult(await productService.GetProductByIdAsync(id));
+
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateProductRequest request) => CreateActionResult(await productService.CreateProductAsync(request));
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(UpdateProductRequest request, string id) => CreateActionResult(await productService.UpdateProductAsync(request, id));
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id) => CreateActionResult(await productService.DeleteProductAsync(id));
     }
 }

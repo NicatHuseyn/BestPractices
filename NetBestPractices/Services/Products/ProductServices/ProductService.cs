@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.EntityFrameworkCore;
 using Repositories.GenericRepositories;
 using Repositories.Products;
 using Repositories.UnitOfWork;
@@ -18,6 +19,26 @@ namespace Services.Products.ProductServices
 {
     public class ProductService(IProductRepository repository, IUnitOfWork unitOfWork) : IProductService
     {
+
+        public async Task<ServiceResult<List<ProductDto>>> GetAllListAsync()
+        {
+            var products = repository.GetAll();
+
+            var productAsDto = await  products.Select(p => new ProductDto(p.Id, p.Name, p.Stock, p.Price)).ToListAsync();
+
+            return new ServiceResult<List<ProductDto>> { Data = productAsDto };
+        }
+
+
+        public async Task<ServiceResult<List<ProductDto>>> GetPaginationListAsync(int pageNumber, int pageSize)
+        {
+            var products = await repository.GetAll().Skip((pageNumber - 1)*pageSize).Take(10).ToListAsync();
+
+            var productAsDto = products.Select(p => new ProductDto(p.Id, p.Name, p.Stock, p.Price)).ToList();
+
+            return new ServiceResult<List<ProductDto>> { Data = productAsDto };
+        }
+
         public async Task<ServiceResult<List<Product>>> GetTopPriceAsync(int count)
         {
             var products = await repository.GetTopPriceAsync(count);
@@ -33,11 +54,11 @@ namespace Services.Products.ProductServices
 
         public async Task<ServiceResult<ProductDto>> GetProductByIdAsync(string id)
         {
-            var product = await repository.GetByIdAsync(id);
+            var product = await repository.GetByIdAsync(Guid.Parse(id));
 
             if (product is null)
             {
-                ServiceResult<ProductDto>.Fail("Product Not Found", HttpStatusCode.NotFound);
+                return ServiceResult<ProductDto>.Fail("Product Not Found", HttpStatusCode.NotFound);
             }
 
             var productAsDto = new ProductDto(product!.Id,product.Name,product.Stock,product.Price);
@@ -64,7 +85,7 @@ namespace Services.Products.ProductServices
 
             // Fast Fail
 
-            var product = await repository.GetByIdAsync(id);
+            var product = await repository.GetByIdAsync(Guid.Parse(id));
             if(product is null)
             {
                 return ServiceResult.Fail("Product Not Found", HttpStatusCode.NotFound);
@@ -81,7 +102,8 @@ namespace Services.Products.ProductServices
 
         public async Task<ServiceResult> DeleteProductAsync(string id)
         {
-            var product = await repository.GetByIdAsync(id);
+            var product = await repository.GetByIdAsync(Guid.Parse(id));
+
 
             if (product is null)
             {
@@ -91,5 +113,6 @@ namespace Services.Products.ProductServices
             await unitOfWork.SaveAsync();
             return ServiceResult.Success();
         }
+
     }
 }

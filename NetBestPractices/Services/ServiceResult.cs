@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Services
@@ -12,11 +13,13 @@ namespace Services
         public T? Data { get; set; }
         public List<string>? ErrorMessages { get; set; }
 
+        [JsonIgnore]
         public bool IsSuccess => ErrorMessages == null || ErrorMessages.Count == 0;
 
+        [JsonIgnore]
         public bool IsFail => !IsSuccess;
 
-
+        [JsonIgnore]
         public HttpStatusCode Status { get; set; }
 
         public static ServiceResult<T> Success(T data, HttpStatusCode status = HttpStatusCode.OK)
