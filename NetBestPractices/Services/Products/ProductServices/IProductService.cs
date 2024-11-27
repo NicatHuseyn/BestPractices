@@ -18,6 +18,7 @@ namespace Services.Products.ProductServices
         Task<ServiceResult<ProductDto>> GetProductByIdAsync(string id);
         Task<ServiceResult<CreateProductResponse>> CreateProductAsync(CreateProductRequest request);
         Task<ServiceResult> UpdateProductAsync(UpdateProductRequest request, string id);
+        Task<ServiceResult> UpdateStockAsync(UpdateProductStockRequest request);
         Task<ServiceResult> DeleteProductAsync(string id);
     }
 }

@@ -7,24 +7,20 @@
       "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\products\\productservices\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\products\\productrequests\\createproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\products\\productrequests\\createproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F12515F-8267-4939-8BCA-233470714710}|BestPractices.API\\BestPractices.API.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\bestpractices.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F12515F-8267-4939-8BCA-233470714710}|BestPractices.API\\BestPractices.API.csproj|solutionrelative:bestpractices.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\repositories\\genericrepositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|solutionrelative:repositories\\genericrepositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F12515F-8267-4939-8BCA-233470714710}|BestPractices.API\\BestPractices.API.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\bestpractices.api\\controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F12515F-8267-4939-8BCA-233470714710}|BestPractices.API\\BestPractices.API.csproj|solutionrelative:bestpractices.api\\controllers\\custombasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\products\\productrequests\\updateproductstockrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\products\\productrequests\\updateproductstockrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\products\\productrequests\\updateproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\products\\productrequests\\updateproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\products\\productservices\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\products\\productservices\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 283,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateProductStockRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductRequests\\UpdateProductStockRequest.cs",
+              "RelativeDocumentMoniker": "Services\\Products\\ProductRequests\\UpdateProductStockRequest.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductRequests\\UpdateProductStockRequest.cs*",
+              "RelativeToolTip": "Services\\Products\\ProductRequests\\UpdateProductStockRequest.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T12:45:12.092Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -55,14 +64,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\GenericRepositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\GenericRepositories\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\GenericRepositories\\GenericRepository.cs",
-              "RelativeToolTip": "Repositories\\GenericRepositories\\GenericRepository.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAABPAAAAAAAAAA==",
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\BestPractices.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "BestPractices.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\BestPractices.API\\Controllers\\ProductsController.cs*",
+              "RelativeToolTip": "BestPractices.API\\Controllers\\ProductsController.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwBsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T19:50:17.199Z",
+              "WhenOpened": "2024-11-27T12:41:09.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateProductRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductRequests\\CreateProductRequest.cs",
+              "RelativeDocumentMoniker": "Services\\Products\\ProductRequests\\CreateProductRequest.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductRequests\\CreateProductRequest.cs",
+              "RelativeToolTip": "Services\\Products\\ProductRequests\\CreateProductRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T12:40:25.517Z",
               "EditorCaption": ""
             },
             {
@@ -73,48 +95,9 @@
               "RelativeDocumentMoniker": "Services\\Products\\ProductRequests\\UpdateProductRequest.cs",
               "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductRequests\\UpdateProductRequest.cs",
               "RelativeToolTip": "Services\\Products\\ProductRequests\\UpdateProductRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T19:42:56.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductServices\\IProductService.cs",
-              "RelativeDocumentMoniker": "Services\\Products\\ProductServices\\IProductService.cs",
-              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductServices\\IProductService.cs",
-              "RelativeToolTip": "Services\\Products\\ProductServices\\IProductService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAApwBEAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T19:40:40.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CustomBaseController.cs",
-              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\BestPractices.API\\Controllers\\CustomBaseController.cs",
-              "RelativeDocumentMoniker": "BestPractices.API\\Controllers\\CustomBaseController.cs",
-              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\BestPractices.API\\Controllers\\CustomBaseController.cs",
-              "RelativeToolTip": "BestPractices.API\\Controllers\\CustomBaseController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T19:15:35.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\BestPractices.API\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "BestPractices.API\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\BestPractices.API\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "BestPractices.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T18:31:32.179Z",
+              "WhenOpened": "2024-11-27T12:40:20.637Z",
               "EditorCaption": ""
             },
             {
@@ -123,11 +106,11 @@
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductServices\\ProductService.cs",
               "RelativeDocumentMoniker": "Services\\Products\\ProductServices\\ProductService.cs",
-              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductServices\\ProductService.cs*",
-              "RelativeToolTip": "Services\\Products\\ProductServices\\ProductService.cs*",
-              "ViewState": "AgIAACoAAAAAAAAAAAAkwDEAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductServices\\ProductService.cs",
+              "RelativeToolTip": "Services\\Products\\ProductServices\\ProductService.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAmwF0AAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T18:31:20.238Z",
+              "WhenOpened": "2024-11-27T12:32:57.426Z",
               "EditorCaption": ""
             }
           ]

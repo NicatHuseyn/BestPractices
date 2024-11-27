@@ -77,5 +77,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BestPractices.API.Controllers.ProductsController",
+    "Method": "GetPagedAll",
+    "RelativePath": "api/Products/{pageNumber}/{pageSize}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

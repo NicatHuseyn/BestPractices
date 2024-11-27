@@ -1,19 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc.Formatters;
-using Microsoft.EntityFrameworkCore;
-using Repositories.GenericRepositories;
+﻿using Microsoft.EntityFrameworkCore;
 using Repositories.Products;
 using Repositories.UnitOfWork;
 using Services.DTOs;
 using Services.Products.ProductRequests;
 using Services.Products.ProductResponses;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading.Tasks.Dataflow;
 
 namespace Services.Products.ProductServices
 {
@@ -77,7 +68,7 @@ namespace Services.Products.ProductServices
             await repository.AddAsync(product);
             await unitOfWork.SaveAsync();
 
-            return ServiceResult<CreateProductResponse>.Success(new CreateProductResponse(product.Id.ToString()));
+            return ServiceResult<CreateProductResponse>.SuccessAsCreated(new CreateProductResponse(product.Id.ToString()), $"api/products/{product.Id}");
         }
 
         public async Task<ServiceResult> UpdateProductAsync(UpdateProductRequest request, string id)
@@ -100,6 +91,21 @@ namespace Services.Products.ProductServices
             return ServiceResult.Success();
         }
 
+        public async Task<ServiceResult> UpdateStockAsync(UpdateProductStockRequest request)
+        {
+            var product = await repository.GetByIdAsync(Guid.Parse(request.productId));
+
+            if (product is null)
+            {
+                return ServiceResult.Fail("Product Not Found", HttpStatusCode.NotFound);
+            }
+
+            product.Stock = request.Quantity;
+            repository.Update(product);
+            await unitOfWork.SaveAsync();
+            return ServiceResult.Success(HttpStatusCode.NoContent);
+        }
+
         public async Task<ServiceResult> DeleteProductAsync(string id)
         {
             var product = await repository.GetByIdAsync(Guid.Parse(id));
@@ -113,6 +119,7 @@ namespace Services.Products.ProductServices
             await unitOfWork.SaveAsync();
             return ServiceResult.Success();
         }
+
 
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Services;
 using Services.Products.ProductRequests;
 using Services.Products.ProductServices;
 using System.Net;
@@ -12,7 +13,7 @@ namespace BestPractices.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll() => CreateActionResult(await productService.GetAllListAsync());
 
-        [HttpGet("{pageNumber}/{pageSize}")]
+        [HttpGet("{pageNumber:int}/{pageSize:int}")]
         public async Task<IActionResult> GetPagedAll(int pageNumber, int pageSize) => CreateActionResult(await productService.GetPaginationListAsync(pageNumber,pageSize));
 
         [HttpGet("{id}")]
@@ -21,10 +22,13 @@ namespace BestPractices.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateProductRequest request) => CreateActionResult(await productService.CreateProductAsync(request));
 
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(UpdateProductRequest request, string id) => CreateActionResult(await productService.UpdateProductAsync(request, id));
 
-        [HttpDelete("{id}")]
+        [HttpPatch("stock")]
+        public async Task<IActionResult> UpdateStock(UpdateProductStockRequest request) => CreateActionResult(await productService.UpdateStockAsync(request));
+
+        [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(string id) => CreateActionResult(await productService.DeleteProductAsync(id));
     }
 }
