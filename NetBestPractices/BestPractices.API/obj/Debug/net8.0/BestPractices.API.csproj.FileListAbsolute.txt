@@ -146,3 +146,6 @@ C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\B
 C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
