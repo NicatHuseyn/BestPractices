@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\services.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\validators\\productvalidators\\createproductrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\validators\\productvalidators\\createproductrequestvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\products\\productservices\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\products\\productservices\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\serviceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\extensions\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\extensions\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 283,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Services",
-              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Services.csproj",
-              "RelativeDocumentMoniker": "Services\\Services.csproj",
-              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Services.csproj*",
-              "RelativeToolTip": "Services\\Services.csproj*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-28T08:33:04.011Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -44,6 +43,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Extensions\\ServiceExtension.cs",
+              "RelativeDocumentMoniker": "Services\\Extensions\\ServiceExtension.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Extensions\\ServiceExtension.cs*",
+              "RelativeToolTip": "Services\\Extensions\\ServiceExtension.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T16:15:29.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductServices\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\Products\\ProductServices\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductServices\\ProductService.cs*",
+              "RelativeToolTip": "Services\\Products\\ProductServices\\ProductService.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwD8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T16:06:38.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceResult.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\ServiceResult.cs",
+              "RelativeDocumentMoniker": "Services\\ServiceResult.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\ServiceResult.cs",
+              "RelativeToolTip": "Services\\ServiceResult.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T16:06:28.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateProductRequestValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Validators\\ProductValidators\\CreateProductRequestValidator.cs",
+              "RelativeDocumentMoniker": "Services\\Validators\\ProductValidators\\CreateProductRequestValidator.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Validators\\ProductValidators\\CreateProductRequestValidator.cs*",
+              "RelativeToolTip": "Services\\Validators\\ProductValidators\\CreateProductRequestValidator.cs*",
+              "ViewState": "AgIAACgAAAAAAAAAAAAvwC0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T15:59:46.18Z",
+              "EditorCaption": ""
             }
           ]
         }

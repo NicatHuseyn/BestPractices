@@ -98,5 +98,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BestPractices.API.Controllers.ProductsController",
+    "Method": "UpdateStock",
+    "RelativePath": "api/Products/stock",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Services.Products.ProductRequests.UpdateProductStockRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

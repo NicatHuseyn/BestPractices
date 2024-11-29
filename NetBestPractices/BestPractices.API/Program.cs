@@ -1,10 +1,8 @@
 
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Repositories;
-using Repositories.Contexts;
 using Repositories.Extensions;
 using Services.Extensions;
+using Services.Filters.FluentValidationFilter;
 
 namespace BestPractices.API
 {
@@ -15,8 +13,11 @@ namespace BestPractices.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
-            builder.Services.AddControllers();
+            builder.Services.AddControllers(options =>
+            {
+                options.Filters.Add<FluentValidationFilter>();
+                options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true;
+            });
 
             // Default Error Model Deactiving
             builder.Services.Configure<ApiBehaviorOptions>(options =>
@@ -46,7 +47,6 @@ namespace BestPractices.API
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

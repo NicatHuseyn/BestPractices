@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 using Repositories.Products;
 using Repositories.UnitOfWork;
 using Services.DTOs;
@@ -8,7 +9,7 @@ using System.Net;
 
 namespace Services.Products.ProductServices
 {
-    public class ProductService(IProductRepository repository, IUnitOfWork unitOfWork) : IProductService
+    public class ProductService(IProductRepository repository, IUnitOfWork unitOfWork, IValidator<CreateProductRequest> createProductRequestValidator) : IProductService
     {
 
         public async Task<ServiceResult<List<ProductDto>>> GetAllListAsync()
@@ -59,6 +60,22 @@ namespace Services.Products.ProductServices
 
         public async Task<ServiceResult<CreateProductResponse>> CreateProductAsync(CreateProductRequest request)
         {
+            // 2. async manual service buissness check
+            var anyProduct = await repository.GetWhere(x => x.Name == request.Name).AnyAsync();
+            if (anyProduct)
+            {
+                return ServiceResult<CreateProductResponse>.Fail("Product already exsist", HttpStatusCode.BadRequest);
+            }
+
+
+            // 3. manual FluentValidation buissness check
+            //var validationResult = await createProductRequestValidator.ValidateAsync(request);
+
+            //if (!validationResult.IsValid)
+            //{
+            //    return ServiceResult<CreateProductResponse>.Fail(validationResult.Errors.Select(x=>x.ErrorMessage).ToList());
+            //}
+
             var product = new Product()
             {
                 Name = request.Name,

@@ -17,7 +17,7 @@ namespace Services.Extensions
         public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IProductService,ProductService>();
-            services.AddFluentValidationAutoValidation();
+            services.AddFluentValidationAutoValidation();  //if we use 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
             return services;

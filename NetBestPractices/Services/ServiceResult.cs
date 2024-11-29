@@ -10,7 +10,7 @@ namespace Services
 {
     public class ServiceResult<T>
     {
-        public T? Data { get; set; }
+        public T? Data { get; set; } 
         public List<string>? ErrorMessages { get; set; }
 
         [JsonIgnore]

@@ -1,4 +1,6 @@
 ﻿using FluentValidation;
+using Microsoft.EntityFrameworkCore;
+using Repositories.Products;
 using Services.Products.ProductRequests;
 using System;
 using System.Collections.Generic;
@@ -10,7 +12,9 @@ namespace Services.Validators.ProductValidators
 {
     public class CreateProductRequestValidator:AbstractValidator<CreateProductRequest>
     {
-        public CreateProductRequestValidator()
+        private readonly IProductRepository _productRepository;
+
+        public CreateProductRequestValidator(IProductRepository productRepository)
         {
             // Product name validator
             RuleFor(x => x.Name)
@@ -21,14 +25,35 @@ namespace Services.Validators.ProductValidators
                 .Length(1, 15)
                 .WithMessage("Product name character count between 3 and 10");
 
+                //sync valid
+                //.Must(MustUniqueProductName).WithMessage("product name is in the database"); 
+
+                // async validation
+                //.MustAsync(MustBeUniqueProductNameAsync).WithMessage("product name is in the database");
+
+
+
             // Product price validator
             RuleFor(x => x.Price)
                 .GreaterThan(0).WithMessage("product price must be greater than 0");
 
             // Product stock validator
             RuleFor(x => x.Stock)
-                .InclusiveBetween(1,500).WithMessage("Product stock should be between 1, 100");
-                
+                .InclusiveBetween(1, 500).WithMessage("Product stock should be between 1, 100");
+            _productRepository = productRepository;
+        }
+
+        // sync validation
+        private bool MustUniqueProductName(string name)
+        {
+            return !_productRepository.GetWhere(x => x.Name == name).Any();
+        }
+
+
+        // async validation
+        private async Task<bool> MustBeUniqueProductNameAsync(string name, CancellationToken cancellationToken)
+        {
+            return !await _productRepository.GetWhere(x=>x.Name == name).AnyAsync(cancellationToken);
         }
     }
 }
