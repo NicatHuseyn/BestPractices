@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Repositories.Categories;
 using Repositories.Contexts;
 using Repositories.GenericRepositories;
 using Repositories.Products;
@@ -24,6 +25,7 @@ namespace Repositories.Extensions
 
             services.AddScoped<IProductRepository,ProductRepository>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IUnitOfWork,UnitOfWork.UnitOfWork>();
 
             return services;

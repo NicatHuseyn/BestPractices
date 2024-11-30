@@ -9,6 +9,6 @@ namespace Repositories.UnitOfWork
 {
     public class UnitOfWork(AppDbContext context) : IUnitOfWork
     {
-        public async Task<int> SaveAsync()=> await context.SaveChangesAsync();
+        public async Task<int> SaveAsync() => await context.SaveChangesAsync();
     }
 }

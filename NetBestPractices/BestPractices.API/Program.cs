@@ -44,6 +44,8 @@ namespace BestPractices.API
                 app.UseSwaggerUI();
             }
 
+            app.UseExceptionHandler(x => { });
+
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

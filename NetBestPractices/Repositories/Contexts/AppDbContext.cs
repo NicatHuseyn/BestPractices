@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Repositories.Categories;
 using Repositories.Products;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace Repositories.Contexts
     public class AppDbContext(DbContextOptions options):DbContext(options)
     {
         public DbSet<Product> Products { get; set; } = default!;
+        public DbSet<Category> Categories { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

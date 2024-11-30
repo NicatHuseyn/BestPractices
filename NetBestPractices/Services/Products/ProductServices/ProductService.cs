@@ -1,42 +1,57 @@
-﻿using FluentValidation;
+﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Products;
 using Repositories.UnitOfWork;
 using Services.DTOs;
+using Services.ExceptionHandlers;
 using Services.Products.ProductRequests;
 using Services.Products.ProductResponses;
 using System.Net;
 
 namespace Services.Products.ProductServices
 {
-    public class ProductService(IProductRepository repository, IUnitOfWork unitOfWork, IValidator<CreateProductRequest> createProductRequestValidator) : IProductService
+    public class ProductService(IProductRepository repository, IUnitOfWork unitOfWork, IValidator<CreateProductRequest> createProductRequestValidator, IMapper mapper) : IProductService
     {
 
         public async Task<ServiceResult<List<ProductDto>>> GetAllListAsync()
         {
-            var products = repository.GetAll();
+            var products = await repository.GetAll().ToListAsync();
 
-            var productAsDto = await  products.Select(p => new ProductDto(p.Id, p.Name, p.Stock, p.Price)).ToListAsync();
+            #region Manual Mapping
+            //var productAsDto = products.Select(p => new ProductDto(p.Id, p.Name, p.Stock, p.Price)).ToList();
+            #endregion
 
-            return new ServiceResult<List<ProductDto>> { Data = productAsDto };
+            var productsAsDto = mapper.Map<List<ProductDto>>(products);
+
+            return ServiceResult<List<ProductDto>>.Success(productsAsDto);
         }
 
 
         public async Task<ServiceResult<List<ProductDto>>> GetPaginationListAsync(int pageNumber, int pageSize)
         {
+
+            if (pageNumber <= 0)
+                return ServiceResult<List<ProductDto>>.Fail("page number cannot be less than 0",HttpStatusCode.BadRequest);
+
             var products = await repository.GetAll().Skip((pageNumber - 1)*pageSize).Take(10).ToListAsync();
 
-            var productAsDto = products.Select(p => new ProductDto(p.Id, p.Name, p.Stock, p.Price)).ToList();
+            #region Manual Mapping
+            //var productAsDto = products.Select(p => new ProductDto(p.Id, p.Name, p.Stock, p.Price)).ToList();
+            //return new ServiceResult<List<ProductDto>> { Data = productAsDto };
+            #endregion
 
-            return new ServiceResult<List<ProductDto>> { Data = productAsDto };
+            var productsAsDto = mapper.Map<List<ProductDto>>(products);
+
+            return ServiceResult<List<ProductDto>>.Success(productsAsDto);
         }
 
         public async Task<ServiceResult<List<Product>>> GetTopPriceAsync(int count)
         {
             var products = await repository.GetTopPriceAsync(count);
+ 
 
-            var productsAsDto = products.Select(p => new ProductDto(p.Id, p.Name, p.Stock, p.Price)).ToList();
-
+            var productAsDtos = mapper.Map<List<ProductDto>>(products);
 
             return new ServiceResult<List<Product>>()
             {
@@ -53,13 +68,14 @@ namespace Services.Products.ProductServices
                 return ServiceResult<ProductDto>.Fail("Product Not Found", HttpStatusCode.NotFound);
             }
 
-            var productAsDto = new ProductDto(product!.Id,product.Name,product.Stock,product.Price);
+            var productAsDto = mapper.Map<ProductDto>(product);
 
             return ServiceResult<ProductDto>.Success(productAsDto!);
         }
 
         public async Task<ServiceResult<CreateProductResponse>> CreateProductAsync(CreateProductRequest request)
         {
+
             // 2. async manual service buissness check
             var anyProduct = await repository.GetWhere(x => x.Name == request.Name).AnyAsync();
             if (anyProduct)
@@ -76,12 +92,7 @@ namespace Services.Products.ProductServices
             //    return ServiceResult<CreateProductResponse>.Fail(validationResult.Errors.Select(x=>x.ErrorMessage).ToList());
             //}
 
-            var product = new Product()
-            {
-                Name = request.Name,
-                Stock = request.Stock,
-                Price = request.Price
-            };
+            var product = mapper.Map<Product>(request);
             await repository.AddAsync(product);
             await unitOfWork.SaveAsync();
 
@@ -94,14 +105,25 @@ namespace Services.Products.ProductServices
             // Fast Fail
 
             var product = await repository.GetByIdAsync(Guid.Parse(id));
+
             if(product is null)
             {
                 return ServiceResult.Fail("Product Not Found", HttpStatusCode.NotFound);
             }
 
-            product.Name = request.Name;
-            product.Stock = request.Stock;
-            product.Price = request.Price;
+
+            var isProductNameExsist = await repository.GetWhere(x => x.Name == request.Name && x.Id != product.Id).AnyAsync();
+            if (isProductNameExsist)
+            {
+                return ServiceResult.Fail("Product already exsist", HttpStatusCode.BadRequest);
+            }
+
+            //product.Name = request.Name;
+            //product.Stock = request.Stock;
+            //product.Price = request.Price;
+
+            product = mapper.Map(request,product);
+
             repository.Update(product);
             await unitOfWork.SaveAsync();
 
@@ -111,6 +133,7 @@ namespace Services.Products.ProductServices
         public async Task<ServiceResult> UpdateStockAsync(UpdateProductStockRequest request)
         {
             var product = await repository.GetByIdAsync(Guid.Parse(request.productId));
+
 
             if (product is null)
             {

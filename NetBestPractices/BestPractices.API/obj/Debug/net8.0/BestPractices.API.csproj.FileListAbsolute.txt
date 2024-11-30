@@ -149,3 +149,4 @@ C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\B
 C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Nicat\OneDrive\Рабочий стол\BestPractices\NetBestPractices\BestPractices.API\bin\Debug\net8.0\AutoMapper.dll

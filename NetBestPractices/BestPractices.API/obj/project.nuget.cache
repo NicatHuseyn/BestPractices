@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0sSmTsblAn8=",
+  "dgSpecHash": "MknBkliVqR4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicat\\OneDrive\\Рабочий стол\\BestPractices\\NetBestPractices\\BestPractices.API\\BestPractices.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Nicat\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Nicat\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Nicat\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\Nicat\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",

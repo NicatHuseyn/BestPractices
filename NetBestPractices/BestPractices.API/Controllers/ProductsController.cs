@@ -22,13 +22,13 @@ namespace BestPractices.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateProductRequest request) => CreateActionResult(await productService.CreateProductAsync(request));
 
-        [HttpPut("{id:int}")]
+        [HttpPut("{id:guid}")]
         public async Task<IActionResult> Update(UpdateProductRequest request, string id) => CreateActionResult(await productService.UpdateProductAsync(request, id));
 
         [HttpPatch("stock")]
         public async Task<IActionResult> UpdateStock(UpdateProductStockRequest request) => CreateActionResult(await productService.UpdateStockAsync(request));
 
-        [HttpDelete("{id:int}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id) => CreateActionResult(await productService.DeleteProductAsync(id));
     }
 }

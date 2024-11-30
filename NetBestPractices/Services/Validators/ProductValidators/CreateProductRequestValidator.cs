@@ -18,12 +18,9 @@ namespace Services.Validators.ProductValidators
         {
             // Product name validator
             RuleFor(x => x.Name)
-                .NotEmpty()
-                .WithMessage("Please enter your product name")
-                .NotNull()
-                .WithMessage("Please enter your product name")
-                .Length(1, 15)
-                .WithMessage("Product name character count between 3 and 10");
+                .NotEmpty().WithMessage("Please enter your product name")
+                .NotNull().WithMessage("Please enter your product name")
+                .Length(1, 15).WithMessage("Product name character count between 3 and 10");
 
                 //sync valid
                 //.Must(MustUniqueProductName).WithMessage("product name is in the database"); 
