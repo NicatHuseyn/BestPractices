@@ -38,6 +38,10 @@ namespace Services.Validators.ProductValidators
             RuleFor(x => x.Stock)
                 .InclusiveBetween(1, 500).WithMessage("Product stock should be between 1, 100");
             _productRepository = productRepository;
+
+            RuleFor(x => x.CategoryId)
+                .NotNull()
+                .NotEmpty().WithMessage("The category ID of the product must be");
         }
 
         // sync validation

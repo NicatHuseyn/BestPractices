@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Services.DTOs
 {
-    public record  ProductDto(Guid Id, string Name, int Stock, decimal Price);
+    public record ProductDto(Guid Id, string Name, int Stock, decimal Price, Guid CategoryId);
 }

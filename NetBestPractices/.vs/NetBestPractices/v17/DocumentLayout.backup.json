@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Migrations\\20241130203029_mig_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\Migrations\\20241130203029_mig_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Migrations\\20241201172449_mig_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Repositories\\Migrations\\20241201172449_mig_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\repositories\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|solutionrelative:repositories\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\repositories\\interceptors\\auditdbcontextinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|solutionrelative:repositories\\interceptors\\auditdbcontextinterceptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\repositories\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|solutionrelative:repositories\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\repositories\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4AF4338-1376-40C9-8305-5F85DDE61B6C}|Repositories\\Repositories.csproj|solutionrelative:repositories\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|c:\\users\\nicat\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\bestpractices\\netbestpractices\\services\\products\\productservices\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E25A7029-2B3D-44DC-9BAC-0F26DC30DCFA}|Services\\Services.csproj|solutionrelative:services\\products\\productservices\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,27 +51,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20241130203029_mig_1.cs",
-              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Migrations\\20241130203029_mig_1.cs",
-              "RelativeDocumentMoniker": "Repositories\\Migrations\\20241130203029_mig_1.cs",
-              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Migrations\\20241130203029_mig_1.cs",
-              "RelativeToolTip": "Repositories\\Migrations\\20241130203029_mig_1.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20241201172449_mig_3.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Migrations\\20241201172449_mig_3.cs",
+              "RelativeDocumentMoniker": "Repositories\\Migrations\\20241201172449_mig_3.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Migrations\\20241201172449_mig_3.cs",
+              "RelativeToolTip": "Repositories\\Migrations\\20241201172449_mig_3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T20:30:29.962Z",
+              "WhenOpened": "2024-12-01T17:24:49.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Entities\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Repositories\\Entities\\Common\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Entities\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "Repositories\\Entities\\Common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T17:22:02.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Products\\Product.cs",
-              "RelativeDocumentMoniker": "Repositories\\Products\\Product.cs",
-              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Products\\Product.cs",
-              "RelativeToolTip": "Repositories\\Products\\Product.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Title": "AuditDbContextInterceptor.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Interceptors\\AuditDbContextInterceptor.cs",
+              "RelativeDocumentMoniker": "Repositories\\Interceptors\\AuditDbContextInterceptor.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Interceptors\\AuditDbContextInterceptor.cs",
+              "RelativeToolTip": "Repositories\\Interceptors\\AuditDbContextInterceptor.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T20:29:36.212Z",
+              "WhenOpened": "2024-12-01T17:15:37.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Contexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Repositories\\Contexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Repositories\\Contexts\\AppDbContext.cs",
+              "RelativeToolTip": "Repositories\\Contexts\\AppDbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T17:13:43.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductServices\\ProductService.cs",
+              "RelativeDocumentMoniker": "Services\\Products\\ProductServices\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Nicat\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\BestPractices\\NetBestPractices\\Services\\Products\\ProductServices\\ProductService.cs",
+              "RelativeToolTip": "Services\\Products\\ProductServices\\ProductService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwEwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T17:05:04.463Z",
               "EditorCaption": ""
             }
           ]

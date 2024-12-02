@@ -14,7 +14,7 @@ namespace Repositories.Products
         public int Stock { get; set; }
         public decimal Price { get; set; }
 
-        public string CategoryId { get; set; }
+        public Guid CategoryId { get; set; } = default!;
         public Category Category { get; set; } = default!;
     }
 }
